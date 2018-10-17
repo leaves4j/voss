@@ -1,4 +1,3 @@
-import assert from 'assert';
 import { MicroTask } from '../lib/micro_task.js';
 
 describe('@voss/utils/lib/micro_task.js', () => {
