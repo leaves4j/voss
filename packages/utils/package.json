@@ -1,0 +1,19 @@
+{
+  "name": "@voss/utils",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "jiangqiang <jiangq.leaves@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
