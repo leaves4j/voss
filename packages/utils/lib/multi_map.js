@@ -1,19 +1,19 @@
 /* eslint-disable no-underscore-dangle */
 /**
- * MutiMap
+ * MultiMap
  *
  * @export
- * @class MutiMap
+ * @class MultiMap
  * @extends {Map}
  */
-export default class MutiMap extends Map {
+export default class MultiMap extends Map {
   _reserved = null;
 
 
   set(key, value) {
     if (!this._reserved) {
-      this._reserved = new MutiMap();
-      this._reserved.reserved = this;
+      this._reserved = new MultiMap();
+      this._reserved._reserved = this;
     }
     this._set(key, value);
     this._reserved._set(value, key);
@@ -38,9 +38,8 @@ export default class MutiMap extends Map {
       values.forEach((reservedKey) => {
         this._reserved._delete(reservedKey, key);
       });
+      this._delete(key);
     }
-
-    this._delete(key);
   }
 
   _delete(key, value) {
