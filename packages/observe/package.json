@@ -1,0 +1,32 @@
+{
+  "name": "@voss/observe",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "jiangqiang <jiangq.leaves@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "mocha --require @babel/register ./test/**/*.test.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@voss/utils": "^0.0.1"
+  }
+}
