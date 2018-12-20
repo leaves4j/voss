@@ -1,0 +1,19 @@
+{
+  "name": "@voss/core",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "jiangqiang <jiangq.leaves@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "mocha --require @babel/register"
+  }
+}
